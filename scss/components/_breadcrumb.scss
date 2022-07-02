@@ -1,0 +1,25 @@
+.breadcrumb {
+  padding: $spacing-one;
+  box-shadow: 3px 5px 8px 0px $shadow;
+  &-nav {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      &:not(:last-child):after {
+        content: ">";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        color: $dark-gray;
+      }
+    }
+    &__link {
+      color: $dark-gray;
+      text-transform: uppercase;
+      padding: $spacing-one;
+      &--current {
+        color: lighten($dark-gray, 30%);
+      }
+    }
+  }
+}

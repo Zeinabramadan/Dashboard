@@ -1,0 +1,55 @@
+.content {
+  padding: $spacing-one;
+  background-color: var(--background-content);
+  height: 100%;
+  overflow-y: scroll;
+  position: relative;
+  &-wrapper {
+    background-color: var(--white);
+    padding: 2em;
+    position: relative;
+    height: 100%;
+    .collapsed {
+      position: absolute;
+      left: 0;
+      background-color: $color-brand-prim-light;
+      color: var(--white);
+      border-radius: 0;
+      padding: $spacing-half;
+      cursor: pointer;
+    }
+  }
+  &-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: $spacing-one;
+    &__button {
+      margin-#{$left}: $spacing-one;
+      @include button(var(--dark-gray), var(--white), 4px);
+    }
+  }
+}
+
+.tabs {
+  &__item {
+    @include button(var(--dark-gray), transparent, 4px);
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    &:not(:first-child) {
+      margin-#{$left}: -4px;
+    }
+    &--active {
+      background-color: var(--white);
+      color: var(--black);
+      font-weight: bold;
+      i {
+        color: $color-brand-prim-light;
+      }
+    }
+    i {
+      margin-#{$right}: 5px;
+    }
+  }
+}

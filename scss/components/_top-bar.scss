@@ -1,0 +1,68 @@
+.top-bar {
+  border-bottom: 1px solid var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-one;
+  background-color: var(--background-content);
+  &-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__icon {
+    @include circle(30px, 30px) {
+      color: $white;
+      background-color: $color-brand-prim-light;
+    }
+  }
+  &__title {
+    margin: 0 $spacing-one;
+    text-transform: capitalize;
+  }
+  &-left {
+    border-#{$left}: 1px solid var(--gray);
+    padding-#{$left}: $spacing-one;
+    .button {
+      @include button($white, $color-brand-prim-light, 4px){
+        text-transform: uppercase;
+      };
+      &-select {
+        background-color: $white;
+        color: $color-brand-prim-light;
+      }
+      &-add {
+        i {
+          margin-#{$right}: 10px;
+        }
+      }
+    }
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    padding: .5em $spacing-one;
+    display: inline-block;
+    border-radius: 30px;
+    width: 85px;
+    margin: 0 .2em;
+    background-color:#EDECEB;
+    color: $dark-gray;
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    a {
+      color: $dark-gray;
+    }
+    &--active {
+      background-color: $color-brand-secondary;
+      a {
+        color: $white;
+      }
+    }
+  }
+}

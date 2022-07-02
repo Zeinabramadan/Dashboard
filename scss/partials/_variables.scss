@@ -1,0 +1,37 @@
+// Colors
+
+$color-brand-primary: #988B6A;
+$color-brand-secondary: #8B6FB1;
+$color-brand-prim-light: #B1A16E;
+
+$black:#000;
+$white: #fff;
+$gray: #EBEBEB;
+$gray-light: #DCDCDC;
+$dark-gray: #6E6E6E;
+$background-light: #F9F8F7;
+$background-content: #F7F6F4;
+$background-input: #F0EFEE;
+$border-color: #E0DEDA;
+$border-color-light: #eee;
+$text-color: #6E6E6E;
+$shadow: rgba(149, 157, 165, 0.2);
+
+// Fonts
+$mainFont: 'Open Sans', sans-serif;
+
+// Media queries breakpoints
+$small-screen: "576px";
+$medium-screen: "768px";
+$large-screen: "992px";
+$x-large-screen: "1200px";
+
+$max-medium-screen: "(max-width: 991px)";
+
+// directions
+$right: right;
+$left: left;
+
+// Spacing
+$spacing-one: 1em;
+$spacing-half: $spacing-one - .5em;

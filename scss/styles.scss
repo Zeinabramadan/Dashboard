@@ -1,0 +1,26 @@
+@import 'partials/variables';
+@import 'partials/light-theme';
+@import 'partials/dark-theme';
+
+// Mixins
+@import 'partials/mixins';
+// Fonts
+@import 'partials/fonts';
+// Global Style
+@import 'partials/globals';
+// Custom styles
+@import 'partials/custom';
+
+// Components
+@import 'components/sidebar';
+@import 'components/header';
+@import 'components/breadcrumb';
+@import 'components/top-bar';
+@import 'components/content';
+@import 'components/table';
+@import 'components/states-bar';
+@import 'components/tasks';
+@import 'components/pagination';
+
+// Responsive
+@import 'partials/responsive';

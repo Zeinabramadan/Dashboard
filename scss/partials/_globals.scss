@@ -1,0 +1,57 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $mainFont;
+  font-size: 14px;
+  background-color: var(--background-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,h2,h3,h5,h6 {
+  margin: 0;
+  color: var(--black);
+}
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+figure {
+  margin: 0;
+}
+
+p {
+  line-height: normal;
+}
+
+.user-icon {
+  @include circle(30px, 30px) {
+    background-color: $gray;
+    color: $white
+  };
+}

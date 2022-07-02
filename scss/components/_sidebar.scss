@@ -1,0 +1,80 @@
+.sidebar {
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  box-shadow: 3px 5px 8px 0px $shadow;
+  transition: 0.5s;
+  text-align: center;
+  &.open {
+    width: 200px;
+    .nav-list__link {
+      display: inline-block;
+    }
+  }
+  .brand {
+    position: relative;
+  }
+  .logo {
+    color: $white;
+    padding: $spacing-one 0;
+    margin: 0;
+    font-size: $spacing-one;
+    background-color: $color-brand-primary;
+    text-transform: uppercase;
+    overflow: hidden;
+  }
+  &__toggle {
+    position: absolute;
+    top: 20%;
+    right: -10px;
+    @include circle(30px, 30px);
+    font-size: 12px;
+    color: $white;
+    box-shadow: 3px 5px 8px 0px $shadow;
+    background-color: $color-brand-prim-light;
+  }
+  .nav {
+    overflow: scroll;
+    height: 100%;
+    padding: 2em 0;
+    &-list {
+      &__item {
+        padding: $spacing-one+$spacing-half 0;
+        color: darken($gray, 20%);
+      }
+      &__item--active {
+        color: $color-brand-primary;
+        border-#{$left}: 3px solid $color-brand-primary;
+      }
+      &__link {
+        color: inherit;
+        margin: .2em 0;
+        display: block;
+      }
+      &__icon {
+        font-size: 16px;
+      }
+    }
+  }
+  &-profile {
+    padding: $spacing-one+$spacing-half 0;
+    color: #b8b8b8;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: var(--white);
+    overflow: hidden;
+  }
+}
+
+.nav-list__item--active {
+  .nav-list__link {
+    color: var(--black);
+  }
+}

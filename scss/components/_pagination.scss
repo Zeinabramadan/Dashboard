@@ -1,0 +1,26 @@
+.pagination {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  width: 100%;
+  padding: $spacing-one 2em;
+  display: flex;
+  justify-content: flex-end;
+  color: var(--black);
+  input {
+    max-width: 60px;
+    border: 1px solid $gray;
+  }
+  &__button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 18px;
+    background-color: lighten($color-brand-prim-light, 30%);
+    color: $color-brand-prim-light;
+    margin: 0 5px;
+  }
+}

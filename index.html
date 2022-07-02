@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roaa tech</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <h1 class="logo">saeed</h1>
+      <button type="button" class="sidebar__toggle" aria-expanded="false" aria-label="navigation button">
+        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+      </button>
+    </div>
+    <nav class="nav" role="navigation">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <i class="fa-solid fa-server nav-list__icon"></i>
+          <a href="" class="nav-list__link">Designer</a>
+        </li>
+        <li class="nav-list__item">
+          <i class="fa-solid fa-server nav-list__icon"></i>
+          <a href="" class="nav-list__link">Services</a>
+        </li>
+        <li class="nav-list__item">
+          <i class="fa-solid fa-newspaper nav-list__icon"></i>
+          <a href="" class="nav-list__link">News</a>
+        </li>
+        <li class="nav-list__item nav-list__item--active">
+          <i class="fa-solid fa-check-to-slot nav-list__icon"></i>
+          <a href="" class="nav-list__link">Data Entity</a>
+        </li>
+        <li class="nav-list__item">
+          <i class="fa-solid fa-calendar-minus nav-list__icon"></i>
+          <a href="" class="nav-list__link">Discounts</a>
+        </li>
+        <li class="nav-list__item">
+          <i class="fa-solid fa-calendar-minus nav-list__icon"></i>
+          <a href="" class="nav-list__link">Events</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar-profile" role="button"><i class="fa-solid fa-user user-icon" aria-label="User profile"></i>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="settings">
+      <i class="fa-solid fa-gear" aria-hidden="true" title="application settings"></i>
+    </div>
+    <header class="header">
+      <h2 class="header__title">Data Entity</h2>
+      <nav class="nav" role="navigation">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <i class="fa-solid fa-moon nav-list__icon" aria-hidden="true" title="Dark theme" role="button"></i>
+            <i class="fa-solid fa-sun nav-list__icon hide-theme" aria-hidden="true" title="light theme"
+              role="button"></i>
+          </li>
+          <li class="nav-list__item">
+            <i class="fa-solid fa-question nav-list__icon" aria-hidden="true" title="FAQ"></i>
+          </li>
+          <li class="nav-list__item">
+            <i class="fa-solid fa-magnifying-glass nav-list__icon" aria-hidden="true" title="search"></i>
+          </li>
+          <li class="nav-list__item nav-list__item--notification">
+            <div class="dot" aria-hidden="true" aria-hidden="true" title="notifications"></div>
+            <i class="fa-solid fa-bell nav-list__icon"></i>
+          </li>
+        </ul>
+        <div class="nav-profile">
+          <div class="nav-logo">
+            <img src="./images/logo.png" alt="Roaa Tech">
+          </div>
+          <i class="fa-solid fa-user user-icon" aria-hidden="true"></i>
+          <a href="" class="nav-profile__link">
+            Zeinab
+            <span>UI/UX</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="breadcrumb">
+      <ul class="breadcrumb-nav" role="navigation">
+        <li class="breadcrumb-nav__item"><a class="breadcrumb-nav__link" href=""><i class="fa-solid fa-house"
+              aria-hidden="true" title="Home"></i></a></li>
+        <li class="breadcrumb-nav__item"><a class="breadcrumb-nav__link" href="">Data entity</a></li>
+        <li class="breadcrumb-nav__item"><a class="breadcrumb-nav__link" href="">Real estate marketing</a></li>
+        <li class="breadcrumb-nav__item"><a class="breadcrumb-nav__link breadcrumb-nav__link--current" href="">Entries
+            list</a></li>
+      </ul>
+    </div>
+    <div class="top-bar">
+      <div class="top-bar-right">
+        <i class="fa-solid fa-house top-bar__icon"></i>
+        <h3 class="top-bar__title">Real estate marketing</h3>
+        <ul class="tags" role="navigation">
+          <li class="tags__item tags__item--active"><a href="">archived</a></li>
+          <li class="tags__item"><a href="">version:2</a></li>
+          <li class="tags__item"><a href="">version:3</a></li>
+          <li class="tags__item"><a href="">version:4</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-left">
+        <button class="button button-select"><i class="fa-solid fa-caret-down" aria-label="select"></i></button>
+        <button class="button button-add"><i class="fa-solid fa-plus"></i>new entry</button>
+      </div>
+    </div>
+    <div class="content">
+      <ul class="tabs" role='tablist'>
+        <li role='tab' class="tabs__item"><i class="fa-solid fa-chart-pie" aria-hidden="true"
+            title="dashboard"></i>Dashboard</li>
+        <li role='tab' class="tabs__item tabs__item--active"><i class="fa-solid fa-list" aria-hidden="true"
+            title="Entries"></i>Entries</li>
+      </ul>
+      <div class="content-wrapper">
+        <div class="overlay" aria-hidden="true"></div>
+        <button class="collapsed" aria-expanded="false"><i class="fa-solid fa-angle-right" aria-hidden="true"
+            title="open statistics menu"></i></button>
+        <div class="states-bar">
+          <header class="states-bar-header">
+            <h4 class="states-bar__title">Entity view</h4>
+            <div class="states-bar-action">
+              <i class="fa-solid fa-expand expand" aria-hidden="true" title="expand screen"></i>
+              <i class="fa-solid fa-angle-left close" aria-hidden="true" title="close statistics menu"></i>
+            </div>
+          </header>
+          <div class="states-bar-content">
+            <div class="states-bar-content-header">
+              <h4 class="states-bar-content__title">All entries</h4>
+              <span>16.750</span>
+            </div>
+
+            <div class="tasks">
+              <div class="tasks-header">
+                <h4 class="tasks__title">Tasks done</h4>
+                <div class="tasks-action">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+              <div class="tasks-content">
+                <div class="chart">
+                  <canvas id="tasksChart" width="100" height="100"></canvas>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="tasks">
+              <div class="tasks-header">
+                <h4 class="tasks__title">Average per month</h4>
+                <div class="tasks-action">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+              <div class="tasks-content">
+                <div class="chart">
+                  <canvas id="monthChart" width="100%" height="50"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="tasks">
+              <div class="tasks-header">
+                <h4 class="tasks__title">Average per month</h4>
+                <div class="tasks-action">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+              <div class="tasks-content">
+                <div class="chart">
+                  <canvas id="horizontalChart" width="100%" height="50"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <div class="tasks">
+              <div class="tasks-header">
+                <h4 class="tasks__title">max tasks done</h4>
+                <div class="tasks-action">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+              <div class="tasks-content">
+                <ul class="tasks-list">
+                  <li class="tasks-list__item">Zeinab: <span class="tasks__number">20 tasks done</span></li>
+                  <li class="tasks-list__item">Zeinab: <span class="tasks__number">20 tasks done</span></li>
+                  <li class="tasks-list__item">Zeinab: <span class="tasks__number">20 tasks done</span></li>
+                  <li class="tasks-list__item">Zeinab: <span class="tasks__number">20 tasks done</span></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-search">
+          <form action="" role='search'>
+            <div class="custom-input">
+              <i class="fa-solid fa-search"></i>
+              <input type="text" class="content-search__input" placeholder="Type for search and filter">
+              <i class="fa-solid fa-filter"></i>
+            </div>
+          </form>
+          <button class="content-search__button" type="button">
+            <i class="fa-solid fa-rectangle-list" aria-hidden="true"></i>
+            Kanban board
+            <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"><input type="checkbox" class="checkbox" />Location <i class="fa-solid fa-sort"></i></th>
+                <th scope="col">Building number <i class="fa-solid fa-sort"></i></th>
+                <th scope="col">Relations <i class="fa-solid fa-sort"></i></th>
+                <th scope="col">Deliver Date <i class="fa-solid fa-sort"></i></th>
+                <th scope="col">Attached files <i class="fa-solid fa-sort"></i></th>
+                <th scope="col">Example <i class="fa-solid fa-sort"></i></th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row"><input type="checkbox" class="checkbox" />Dummy text</td>
+                <td scope="row">Spain</td>
+                <td scope="row">Germany</td>
+                <td scope="row">Greece</td>
+                <td scope="row">Spain</td>
+                <td scope="row">Germany</td>
+                <td scope="row"><i class="fa-solid fa-ellipsis"></i></td>
+              </tr>
+              <tr>
+                <td scope="row"><input type="checkbox" class="checkbox" />Dummy text</td>
+                <td scope="row">Dummy text</td>
+                <td scope="row">Mexico</td>
+                <td scope="row">Spain</td>
+                <td scope="row">Spain</td>
+                <td scope="row">Germany</td>
+                <td scope="row"><i class="fa-solid fa-ellipsis"></i></td>
+              </tr>
+              <tr>
+                <td scope="row"><input type="checkbox" class="checkbox" />Dummy text</td>
+                <td scope="row">Dummy text</td>
+                <td scope="row">Mexico</td>
+                <td scope="row">Greece</td>
+                <td scope="row">Spain</td>
+                <td scope="row">Germany</td>
+                <td scope="row"><i class="fa-solid fa-ellipsis"></i></td>
+              </tr>
+              <tr>
+                <td scope="row"><input type="checkbox" class="checkbox" />Dummy text</td>
+                <td scope="row">Dummy text</td>
+                <td scope="row">Mexico</td>
+                <td scope="row">Greece</td>
+                <td scope="row">Spain</td>
+                <td scope="row">Germany</td>
+                <td scope="row"><i class="fa-solid fa-ellipsis"></i></td>
+              </tr>
+              <tr>
+                <td scope="row"><input type="checkbox" class="checkbox" />Dummy text</td>
+                <td scope="row">Dummy text</td>
+                <td scope="row">Mexico</td>
+                <td scope="row">Greece</td>
+                <td scope="row">Spain</td>
+                <td scope="row">Germany</td>
+                <td scope="row"><i class="fa-solid fa-ellipsis"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <a class="pagination__button" href="#"><i class="fa-solid fa-angles-left"></i></a>
+          <a class="pagination__button" href="#" title="previous"><i class="fa-solid fa-angle-left"></i></a>
+          <input type="number" placeholder="1">
+          <a class="pagination__button" href="#" title="next"><i class="fa-solid fa-angle-right"></i></a>
+          <a class="pagination__button" href="#"><i class="fa-solid fa-angles-right"></i></a>
+          <div class="pagination-number">1-25 of 200</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

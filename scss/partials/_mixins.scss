@@ -1,0 +1,33 @@
+
+@mixin button($color, $bg, $radius:10px) {
+	border: none;
+	background-color: $bg;
+	color: $color;
+	border-radius: $radius;
+	text-align: center;
+	padding: .5em $spacing-one;
+	box-shadow: 0 0 8px 0px $shadow;
+	display: inline-block;
+	cursor: pointer;
+	@content;
+}
+
+@mixin circle($w: 20px, $h:20px) {
+	display: inline-block;
+	width: $w;
+	height: $h;
+	line-height: $h - 2;
+	border-radius: 50%;
+	text-align: center;
+	@content;
+}
+
+@mixin header($border) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-one+$spacing-half $spacing-one;
+  @if $border {
+    border-bottom: 1px solid $border-color-light;
+  }
+}

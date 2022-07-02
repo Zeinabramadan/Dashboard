@@ -1,0 +1,49 @@
+.states-bar {
+  position: absolute;
+  left: 0;
+  display: none;
+  background-color: var(--white);
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  width: 400px;
+  box-shadow: 0 0 10px $shadow;
+  overflow: hidden;
+  &.open {
+    display: block;
+  }
+  &-header {
+    @include header(true);
+  }
+  &__title {
+    margin: 0;
+    color: var(--black);
+  }
+  &-action {
+    margin-left: auto;
+    i {
+      margin-#{$left}: $spacing-one;
+    }
+  }
+  .close {
+    color: $color-brand-prim-light;
+    cursor: pointer;
+  }
+  .expand {
+    color: $dark-gray;
+  }
+  &-content {
+    padding: 0 $spacing-one $spacing-one;
+    height: 100%;
+    overflow-x: scroll;
+    &-header {
+      color: var(--black);
+      @include header(true);
+      font-weight: bold;
+    }
+    &__title {
+      margin: 0;
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.table {
+  width: 100%;
+  text-align: $left;
+  overflow-x: auto;
+  border-collapse: collapse;
+  thead {
+    th {
+      padding: $spacing-one .75em;
+      color: $dark-gray;
+      &:last-of-type {
+        width: 50px;
+      }
+      i {
+        color: $gray;
+        margin: 0 .5em;
+        cursor: pointer;
+      }
+      &:hover {
+        color: $color-brand-prim-light;
+      }
+    }
+  }
+  tbody {
+    background-color: $background-content;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    tr:hover {
+      background-color: darken($background-content, 10%);
+    }
+    td {
+      padding: 0.75rem;
+      vertical-align: top;
+      border-bottom: 1px solid $border-color;
+      &:last-of-type {
+        box-shadow: -2px 0px 5px 0px $gray;
+        width: 50px;
+        text-align: center;
+        background-color: darken($background-content, 2%);
+      }
+    }
+  }
+  .checkbox {
+    margin-#{$right}: $spacing-one;
+  }
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: var(--black);
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  opacity: 0;
+  &.shown {
+    width: 100%;
+    opacity: .1;
+  }
+}
